@@ -4,6 +4,7 @@ wcsc.js是wxss文件编译器的nodejs实现
 
 目标：
 
+- typescript编写该工具
 - 实现微信开发者工具的二进制工具`wcsc`
 - 完善的测试用例支持
 - 完善的性能测试
@@ -46,7 +47,7 @@ cd wcsc.js
 npm install
 ```
 
-### 代码提交前的自动化测试：***已经累计上百个小程序的测试样例***
+### 代码提交前的自动化测试：***已经累计上百个开源的小程序***
 
 支持`macOs`和`windows`，不支持`linux`
 
@@ -139,13 +140,15 @@ npm run test:fail
 
 测试样例地址：
 
-TODO
+<https://github.com/caijw/wcsc.js/tree/master/test/succSuit>
+
+<https://github.com/caijw/wcsc.js/tree/master/test/failSuit>
 
 完善的测试样例，用例还在持续增加，以覆盖到大部分的场景。
 
 正向用例-测试流程要点：
 
-1. `wcsc.js`将完整的小程序qss源码，编译成`json`[map.wcscjs.json](TODO)
+1. `wcsc.js`将完整的小程序wxss源码，编译成`json`[map.wcscjs.json](TODO)
 2. `wcsc`将完整的小程序wxss源码，编译成`json`代码[map.wcsc.json](TODO)
 3. 构建一个模拟浏览器的沙箱环境，提取`wcsc.js`生成的`map.wcscjs.json`的所有`setCssToHead`函数然后运行，得到最终生成的所有`css`样式`wcscjs.css`
 4. 构建一个模拟浏览器的沙箱环境，提取wcsc生成的`map.wcsc.json`的所有`setCssToHead`函数然后运行，得到最终生成的所有`css`样式`wcsc.css`
@@ -168,7 +171,3 @@ npm run benchmark
 ```
 
 复用了自动化测试的测试样例，对比测试了`wcsc.js`和`wcsc`编译相同的小程序项目的耗时对比
-
-## 各种边缘条件的覆盖和处理
-
-持续迭代中
