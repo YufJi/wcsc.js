@@ -148,8 +148,8 @@ npm run test:fail
 
 正向用例-测试流程要点：
 
-1. `wcsc.js`将完整的小程序wxss源码，编译成`json`[map.wcscjs.json](TODO)
-2. `wcsc`将完整的小程序wxss源码，编译成`json`代码[map.wcsc.json](TODO)
+1. `wcsc.js`将完整的小程序wxss源码，编译成`json`[map.wcscjs.json](https://github.com/caijw/wcsc.js/blob/master/test/succSuit/suit0/out/map.wcscjs.json)
+2. `wcsc`将完整的小程序wxss源码，编译成`json`代码[map.wcsc.json](https://github.com/caijw/wcsc.js/blob/master/test/succSuit/suit0/out/map.wcsc.json)
 3. 构建一个模拟浏览器的沙箱环境，提取`wcsc.js`生成的`map.wcscjs.json`的所有`setCssToHead`函数然后运行，得到最终生成的所有`css`样式`wcscjs.css`
 4. 构建一个模拟浏览器的沙箱环境，提取wcsc生成的`map.wcsc.json`的所有`setCssToHead`函数然后运行，得到最终生成的所有`css`样式`wcsc.css`
 5. 对比`wcscjs.css`和`wcsc.css`是否完全一致
