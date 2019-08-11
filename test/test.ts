@@ -21,12 +21,12 @@ process.argv.forEach((val, index) => {
 });
 
 function runSuit(testSuit: ITestSuit) {
-  let qcscCompileTime: number = 0;
-  let qcscOutputCode: string = "";
-  let qcscCodeMap: testUtil.ICodeMap = {};
-  let qcscCssMap: ICssMap = {};
-  let qcscSandbox: Sandbox;
-  let qcscXcInvalidMap: IXcInvalidMap = {};
+  let wcscjsCompileTime: number = 0;
+  let wcscjsOutputCode: string = "";
+  let wcscjsCodeMap: testUtil.ICodeMap = {};
+  let wcscjsCssMap: ICssMap = {};
+  let wcscjsSandbox: Sandbox;
+  let wcscjsXcInvalidMap: IXcInvalidMap = {};
   let wcscCompileTime: number = 0;
   let wcscOutputCode: string = "";
   let wcscCodeMap: testUtil.ICodeMap = {};
@@ -40,13 +40,13 @@ function runSuit(testSuit: ITestSuit) {
         const startTime: number = Date.now();
         testUtil.runWcscjs(testSuit.compilerConfig).then((code) => {
           const endTime = Date.now();
-          qcscCompileTime = endTime - startTime;
-          qcscOutputCode = code as string;
+          wcscjsCompileTime = endTime - startTime;
+          wcscjsOutputCode = code as string;
           fs.writeFileSync(path.join(testSuit.compilerConfig.outputDir, "./code.wcscjs.css"), code, {
             encoding: "utf8",
           });
           if (needCode2Map) {
-            qcscCodeMap = testUtil.code2Map(qcscOutputCode, "wcscjs", testSuit.compilerConfig);
+            wcscjsCodeMap = testUtil.code2Map(wcscjsOutputCode, "wcscjs", testSuit.compilerConfig);
           }
           resolve();
         }).catch((err) => {
@@ -79,29 +79,29 @@ function runSuit(testSuit: ITestSuit) {
       it(testSuit.name + "[assert wcscjs and wcsc output]", () => {
         return new Promise((resolve, reject) => {
           try {
-            qcscSandbox = new Sandbox(qcscCodeMap, testSuit.compilerConfig, "wcscjs");
+            wcscjsSandbox = new Sandbox(wcscjsCodeMap, testSuit.compilerConfig, "wcscjs");
             wcscSandbox = new Sandbox(wcscCodeMap, testSuit.compilerConfig, "wcsc");
-            qcscSandbox.run();
+            wcscjsSandbox.run();
             wcscSandbox.run();
-            qcscCssMap = qcscSandbox.getCssMap();
+            wcscjsCssMap = wcscjsSandbox.getCssMap();
             wcscCssMap = wcscSandbox.getCssMap();
-            qcscXcInvalidMap = qcscSandbox.getXcInvalidMap();
+            wcscjsXcInvalidMap = wcscjsSandbox.getXcInvalidMap();
             wcscXcInvalidMap = wcscSandbox.getXcInvalidMap();
-            fs.writeFileSync(path.join(testSuit.compilerConfig.outputDir, "./_xcInvalidMap.wcscjs.json"), qcscXcInvalidMap, {
+            fs.writeFileSync(path.join(testSuit.compilerConfig.outputDir, "./_xcInvalidMap.wcscjs.json"), wcscjsXcInvalidMap, {
               encoding: "utf8",
             });
             fs.writeFileSync(path.join(testSuit.compilerConfig.outputDir, "./_xcInvalidMap.wcsc.json"), wcscXcInvalidMap, {
               encoding: "utf8",
             });
-            const qcscCssMapKeys = Object.keys(qcscCssMap);
+            const wcscjsCssMapKeys = Object.keys(wcscjsCssMap);
             const wcscCssMapKeys = Object.keys(wcscCssMap);
-            // assert.deepEqual(qcscXcInvalidMap, wcscXcInvalidMap);
-            qcscCssMapKeys.sort();
+            // assert.deepEqual(wcscjsXcInvalidMap, wcscXcInvalidMap);
+            wcscjsCssMapKeys.sort();
             wcscCssMapKeys.sort();
-            assert.deepEqual(qcscCssMapKeys, wcscCssMapKeys);
+            assert.deepEqual(wcscjsCssMapKeys, wcscCssMapKeys);
             wcscCssMapKeys.forEach((key) => {
               try {
-                assert.equal(qcscCssMap[key], wcscCssMap[key]);
+                assert.equal(wcscjsCssMap[key], wcscCssMap[key]);
               } catch (err) {
                 console.error(`key: ${key}`);
                 throw err;

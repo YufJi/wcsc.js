@@ -53,12 +53,12 @@ export function runWcsc(compilerConfig: ICompilerConfig): Promise<string> {
 
 export function runWcscjs(compilerConfig: ICompilerConfig): Promise<string | IOutMap> {
   return new Promise((resolve, reject) => {
-    const qcscCompileConfig: IWCSCCompileConfig = {
+    const wcscjsCompileConfig: IWCSCCompileConfig = {
       FILES: compilerConfig.FILES,
       FILESBASE: compilerConfig.FILESBASE,
       cmd: compilerConfig.cmd,
     };
-    const wcscjs: WCSC = new WCSC(qcscCompileConfig);
+    const wcscjs: WCSC = new WCSC(wcscjsCompileConfig);
     wcscjs.compile().then((code) => {
       resolve(code);
     }).catch((errMsg) => {
