@@ -1,0 +1,12 @@
+<image src="/images/background.jpg" class="back"></image>
+<view class="reg-main">
+  <form catchsubmit="formSubmit">
+    <view class="RegLogo">Sign up</view>
+    <view class="ts">已通过微信注册，请完善信息</view>
+    <input type="text" placeholder="username" placeholder-style="color:#FFF" name="username"/>
+    <input type="password" placeholder="password" placeholder-style="color:#FFF" name="password"/>
+    <input type="password" placeholder="confirm password" placeholder-style="color:#FFF" name="password1"/>
+    <input type="text" placeholder="school" placeholder-style="color:#FFF" name="school"/>
+     <button formType="submit">Register</button>
+  </form>
+</view>

@@ -1,0 +1,195 @@
+page{
+    background-color: #eee;
+    height: 100%;
+}
+.page {
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+}
+.page-bottom{
+  height: 100%;
+  width: 750rpx;
+  position: fixed; 
+  background-color: #555;
+  z-index: 0;
+}
+.wc{
+  color: white;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+.page-content{
+  height: 2000rpx;
+}
+.page-top{
+  height: 100%;
+  position: fixed;
+  width: 750rpx;
+  background-color: #FFF;
+  z-index: 0;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}
+.c-state1{
+  transform: rotate(0deg) scale(1) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(75%,0%); 
+}
+.c-state2{
+  transform: rotate(0deg) scale(.8) translate(75%,0%); 
+  -webkit-transform: rotate(0deg) scale(.8) translate(75%,0%); 
+}
+.main{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+.info-top{
+  width: 100%;
+  height: 80rpx;
+  background-color: #333;
+}
+.setting{
+  float: left;
+  width: 50rpx;
+  height: 40rpx;
+  margin: 15rpx 30rpx;
+}
+.message{
+  float: right;
+  width: 50rpx;
+  height: 40rpx;
+  margin: 15rpx 30rpx;
+}
+.info-main{
+  width: 100%;
+  height: 160rpx;
+  background-color: #333;
+}
+.unlogin{
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  margin: 30rpx;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+.unlogin-text{
+  float: left;
+  font-size: 40rpx;
+  height: 160rpx;
+  line-height: 180rpx;
+  color: #FFF;
+}
+.right{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin: 65rpx 20rpx;
+}
+.nologin{
+  width: 100%;
+  height: 500rpx;
+}
+.plogin{
+  width: 100%;
+  margin-top: 300rpx;
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+.info-list{
+  width: 100%;
+  margin-top:40rpx;
+}
+.info-one{
+  width: 100%;
+  height: 80rpx;
+  background-color: #FFF;
+  border-top: 1px solid #ccc;
+}
+.l{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx 30rpx;
+  float: left;
+}
+.info-one text{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 15px;
+}
+.r{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+  float: right;
+}
+.outlogin{
+  width: 710rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 5px;
+  margin-top: 40rpx;
+  font-size: 14px;
+  background-color: #ed424f;
+}
+.cart-top{
+  width: 100%;
+  height: 80rpx;
+  background-color: #333;
+}
+.cart-top image{
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+  margin: 20rpx;
+}
+.cart-top text{
+  float: left;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 15px;
+  color: #FFF;
+}
+.cart{
+  width: 500rpx;
+  height: 300rpx;
+  margin-left: 26rpx;
+  border-bottom: 1px solid #FFF;
+  display: flex;
+  flex-direction: row;
+}
+.cart image{
+  width: 200rpx;
+  height: 260rpx;
+  margin-top: 20rpx;
+}
+.cart-right{
+  width: 280rpx;
+  height: 260rpx;
+  margin: 20rpx 0 20rpx 20rpx;
+}
+.cart-title{
+  width: 100%;
+  height: 60rpx;
+  color: #FFF;
+  font-size: 15px;
+}
+.cart-count{
+  width: 100%;
+  height: 60rpx;
+  color: #FFF;
+  font-size: 12px;
+}
+.cart-delete{
+  width: 100rpx;
+  height: 50rpx;
+  margin-top: 90rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 13px;
+  background-color: #ed424f;
+}

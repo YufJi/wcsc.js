@@ -1,0 +1,51 @@
+{
+	"projectid": "1108100302_wechat-app-music",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"remoteDebugLogEnable": false,
+		"sourcemapDisabled": true,
+		"useAlphaLib": true,
+		"nodeModules": true,
+		"uglifyFileName": true
+	},
+	"qqLibVersion": "1.5.1",
+	"compileType": "miniprogram",
+	"createTime": 1564757639656,
+	"accessTime": 1564757639656,
+	"packOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"qqappid": "1108100302",
+	"projectname": "wechat-app-music",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

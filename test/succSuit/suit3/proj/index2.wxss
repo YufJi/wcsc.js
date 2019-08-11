@@ -1,0 +1,7 @@
+@import "index3.wxss";
+index2-view {
+  width: 100rpx;
+}
+view2, video2 {
+  width: 100rpx;
+}

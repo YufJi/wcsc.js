@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": false,
+		"minified": true,
+		"newFeature": true,
+		"remoteDebugLogEnable": false,
+		"sourcemapDisabled": true,
+		"useAlphaLib": true,
+		"nodeModules": true,
+		"autoAudits": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.5.3",
+	"appid": "wx4886dac7da9bd358",
+	"projectname": "%E8%90%A5%E9%94%80%E7%BB%84%E4%BB%B6",
+	"qqappid": "1108100302",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "手势解锁",
+					"pathName": "pages/gestureLock/gestureLock",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/list/list",
+					"query": ""
+				}
+			]
+		}
+	}
+}

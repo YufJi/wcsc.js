@@ -1,0 +1,79 @@
+/* neiwang/tongxunlu/tongxunlu.wxss */
+page {
+  background-color: #f8f8f8;
+  line-height: 1.6;
+}
+
+.section {
+  margin: 30rpx 0 0 0; 
+  padding: 20rpx 30rpx;
+  line-height: 1.8;
+  font-size: 35rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  background:white;
+}
+.section-left {
+  width: 30%;
+  text-align: center;
+}
+.section-mid {
+  width: 40%;
+  text-align: center;
+}
+.section-right {
+  width: 30%;
+  text-align: center;
+}
+input {
+  color: #369;
+}
+.btn {
+  max-width: 500rpx;
+  margin-top: 30rpx;
+}
+
+.staff-list {
+  margin: 20rpx;
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+}
+.staff-info {
+  padding: 5rpx 10rpx 0 10rpx;
+  display: flex;
+  flex-flow: row;
+}
+.staff-nm {
+  color: #d2b72b;
+  text-align: left;
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  width: 30%;
+}
+.staff-dep{
+  color: #0d3556;
+  text-align: right;
+  padding-right: 10rpx;
+  font-size: 32rpx;
+  width: 70%;
+}
+.staff-l {
+  text-align: left;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  width: 40%;
+}
+.staff-c {
+  text-align: center;
+  font-size: 30rpx;
+  width: 20%;
+}
+.staff-r {
+  text-align: right;
+  padding-right: 10rpx;
+  font-size: 30rpx;
+  width: 40%;
+}

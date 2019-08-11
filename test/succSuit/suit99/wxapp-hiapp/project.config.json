@@ -1,0 +1,27 @@
+{
+	"description": "A simple and interesting wechat app.",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"remoteDebugLogEnable": false,
+		"sourcemapDisabled": true,
+		"useAlphaLib": true,
+		"nodeModules": true,
+		"autoAudits": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"appid": "touristappid",
+	"projectname": "weapp-hiapp",
+	"miniprogramRoot": "dist/",
+	"qqappid": "1108100302",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"condition": {}
+}

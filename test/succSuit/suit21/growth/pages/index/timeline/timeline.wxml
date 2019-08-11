@@ -1,0 +1,6 @@
+<view class="item" wx:for="{{detail}}" wx:key="section">
+  <view class="title">{{item.section}}</view>
+  <view class="content">
+    {{item.description}}
+  </view>
+</view>

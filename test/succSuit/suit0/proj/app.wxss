@@ -1,0 +1,37 @@
+.index-hd, .indes, #popsdf {
+  text-align: center, sdfsd;
+  width: 30rpx;
+}
+@media (max-width : 360px) {
+  .line text {
+      font-size: 36rpx;
+  }
+}
+.detail {
+  width: 100%-150rpx;
+}
+wx-button {
+  margin-top: 9px;
+}
+#wordscard.text {
+  font-size: .8em;
+}
+#wordscard  .text {
+  font-size: .8em;
+}
+#wordscard  text {
+  font-size: .8em;
+}
+.filter-tab:not(.sort-tab) text.active:after{
+  padding-right: 10RPX;
+	border-top: 0;
+	border-bottom: 12rpx solid #f7982a;
+}
+.one:nth-child(1){
+  margin-top: 0;
+  padding-top: 1em;
+}
+button[disabled][type="primary"] {
+    border-radius: 0;
+    background-color:#ccc;
+}

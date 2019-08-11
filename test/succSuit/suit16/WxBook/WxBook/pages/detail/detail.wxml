@@ -1,0 +1,152 @@
+<import src="../template/template-star/template-star.wxml" />
+<import src="../template/template-book/template-book.wxml" />
+<view class="container-main">
+  <image class="head-img" src="{{book.image}}" mode="aspectFill" />
+  <view class="head-img-hover" data-src="{{book.image}}" catchtap="viewBookPostImg">
+    <text class="main-title">{{book.title}}</text>
+    <text class="sub-title">{{book.pubdate}} · {{book.publisher}}</text>
+    <view class="like">
+      <text class="plain-font">
+        页数
+      </text>
+      <text class="highlight-font">
+        {{book.pages}}
+      </text>
+      <text class="plain-font">
+        单价
+      </text>
+      <text class="highlight-font">
+        {{book.price}}
+      </text>
+      <text class="plain-font">
+        库存
+      </text>
+      <text class="highlight-font">
+        {{book.count}}
+      </text>
+    </view>
+    <view class="like">
+      <text class="plain-font">
+        点赞
+      </text>
+      <text class="highlight-font">
+        {{book.good}}
+      </text>
+      <text class="plain-font">
+        收藏
+      </text>
+      <text class="highlight-font">
+        {{book.collect}}
+      </text>
+    </view>
+  </view>
+  <image class="book-img-top" src="{{book.image}}" data-src="{{book.image}}" catchtap="viewBookPostImg" />
+  <view class="summary">
+    <view class="original-title">
+      <text>{{book.title}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">评分</text>
+      <template is="starTemplate" data="{{stars:book.star, rating:book.rating}}" />
+    </view>
+    <view class="flex-row">
+      <text class="mark">作者</text>
+      <text>{{book.author}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">类型</text>
+      <text>{{book.tags}}</text>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">书籍简介</text>
+    <view wx:if="{{iss}}" class="content">
+      <text class="summary-content">{{book.summary}}</text>
+      <image class="icon" src="/images/icon/down.png" catchtap="ons"></image>
+    </view>
+    <view wx:else class="content">
+      <text class="summary-content">{{summary}}</text>
+      <image class="icon" src="/images/icon/up.png" catchtap="offs"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="synopsis">
+    <text class="synopsis-font">作者简介</text>
+    <view wx:if="{{isa}}" class="content">
+      <text class="summary-content">{{book.author_intro}}</text>
+      <image class="icon" src="/images/icon/down.png" catchtap="ona"></image>
+    </view>
+    <view wx:else class="content">
+      <text class="summary-content">{{author_intro}}</text>
+      <image class="icon" src="/images/icon/up.png" catchtap="offa"></image>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="xgtj">相关推荐</view>
+  <scroll-view class="cast-imgs" scroll-x="true" style="width:100%">
+    <view class="books-container">
+      <block wx:for="{{others}}" wx:for-item="other">
+        <template is="bookTemplate" data="{{...other}}" />
+      </block>
+    </view>
+  </scroll-view>
+  <view wx:if="{{local}}">
+  <view class="hr"></view>
+  <view class="xgtj">用户评论</view>
+    <view wx:if="{{iscomment}}">
+      <block wx:for="{{comment}}" wx:for-item="c">
+        <view class="comment-one">
+          <view class="comment-face">
+            <image src="{{c.face}}" class="face"></image>
+            <text class="comment-name">{{c.name}}</text>
+            <template is="starTemplate" data="{{stars:c.star,rating:c.rating}}"/>
+            <text class="comment-time">{{c.time}}</text>
+          </view>
+          <view class="comment-content">{{c.content}}</view>
+        </view>
+      </block>
+    </view>
+    <view class="" wx:else>
+    
+    </view>
+  </view>
+  <view class="under"></view>
+  <view wx:if="{{islogin}}">
+    <view class="localunder" wx:if="{{local}}">
+      <view class="under-one" catchtap="changegood">
+        <view wx:if="{{good}}">
+          <image src="/images/icon/ydz.png"></image>
+          <text>已点赞</text>
+        </view>
+        <view wx:else>
+          <image src="/images/icon/dz.png"></image>
+          <text>点赞</text>
+        </view>
+      </view>
+      <view class="under-one" style="border:none;" catchtap="changecollect">
+        <view wx:if="{{collect}}">
+          <image src="/images/icon/ysc.png"></image>
+          <text>已收藏</text>
+        </view>
+        <view wx:else>
+          <image src="/images/icon/sc.png"></image>
+          <text>收藏</text>
+        </view>
+      </view>
+      <view catchtap="changecart">
+        <view class="addcart" wx:if="{{cart}}">取消加入借书车</view>
+        <view class="addcart" wx:else>加入借书车</view>
+      </view>
+      <view catchtap="changereserve">
+        <view class="yuding" wx:if="{{reserve}}">取消预定</view>
+        <view class="yuding" wx:else>在线预定</view>
+      </view>
+    </view>
+    <view wx:else>
+      <view class="yununder" wx:if="{{have}}">图书馆已有该图书</view>
+      <view class="yununder" catchtap="changecommend" wx:else>图书馆暂无该书籍，推荐到图书馆</view>
+    </view>
+  </view>
+  <view wx:else class="yununder">登录获取更多操作哦</view>
+</view>

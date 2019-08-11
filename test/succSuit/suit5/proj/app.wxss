@@ -1,0 +1,21 @@
+/**app.wxss**/
+.container, view {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+video, .container-box, #isdsdf {
+  height: 123;
+  color: rgb(0,0,0);
+}
+
+
+#dfsdfsd, hello, .claosdfsdf {
+  height: 100rpx;
+  float: left;
+}

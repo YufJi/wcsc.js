@@ -1,0 +1,5 @@
+@import "index.wxss";
+
+view {
+  width: 100rpx;
+}

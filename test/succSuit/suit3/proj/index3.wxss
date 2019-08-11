@@ -1,0 +1,7 @@
+
+index3-view {
+  width: 100rpx;
+}
+view3, video3 {
+  width: 100rpx;
+}

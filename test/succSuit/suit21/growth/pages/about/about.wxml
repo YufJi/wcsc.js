@@ -1,0 +1,50 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells__title">团队成员</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-panel weui-panel_access" wx:for="{{members}}" wx:key="icon" wx:for-item="member">
+        <view class="weui-panel__bd">
+          <view url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="{{member.icon}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">
+                <text class="iconfont icon-github"></text>{{member.name}}</view>
+              <view class="weui-media-box__desc">{{member.desc}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__title">加入我们</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">公众号</view>
+        <view class="weui-cell__ft">Phodal</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">QQ群</view>
+        <view class="weui-cell__ft" bindtap="setClipboardData" data-number="529600394">529600394</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">论坛</view>
+        <view class="weui-cell__ft">http://forum.growth.ren</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">官网</view>
+        <view class="weui-cell__ft">http://growth.ren/</view>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">联系我们</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">在线客服</view>
+        <view class="weui-cell__ft">
+          <contact-button size="20" session-from="weapp"> </contact-button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

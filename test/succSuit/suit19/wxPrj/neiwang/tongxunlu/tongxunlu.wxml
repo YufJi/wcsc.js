@@ -1,0 +1,49 @@
+<!--neiwang/tongxunlu/tongxunlu.wxml-->
+<view class="section">
+    <view class="section-left">
+      <input placeholder="部门" bindinput='changeBm' />
+    </view>
+    <view class="section-mid">
+      <input placeholder="工号" bindinput='changeSf' />
+    </view>
+    <view class="section-right">
+      <input placeholder="姓名" bindinput='changeNm' />
+    </view>
+</view>
+<view class="section">
+    <view class="section-left">
+      <input placeholder="手机" bindinput='changeSj' />
+    </view>
+    <view class="section-mid">
+      <input placeholder="短号" bindinput='changeDh' />
+    </view>
+    <view class="section-right">
+      <input placeholder="固话" bindinput='changeGh' />
+    </view>
+</view>
+<button type='primary' class='btn' bindtap='search'>查询</button>
+<block wx:for="{{staffList}}" wx:key="index">
+<view data-id="{{item}}"  bindtap="openMakeCallOption">
+  <view class="staff-list">
+    <view class="staff-info">
+      <label class="staff-l" style='color: #d2b72b'>{{item.staff_nm}}</label>
+      <label class="staff-c">{{item.staff_no}}</label>
+      <label class="staff-r" style='color: #0d3556'>{{item.bm}}</label>
+    </view>
+    <view class="staff-info">
+      <label class="staff-l" style='color:#7B68EE'>{{item.phone}}</label>
+      <label class="staff-c">{{item.short_phone}}</label>
+      <label class="staff-r">{{item.gd_phone}}</label>
+    </view>
+  </view>
+  </view>
+</block>
+
+<!--默认action-sheet为隐藏，由button触发-->
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="listenerActionSheet" >
+    <block wx:for-items="{{actionSheetItems}}" wx:key="index"> 
+        <action-sheet-item data-id="{{item}}" bindtap="makeCall">{{item}}</action-sheet-item>
+    </block>
+    <!--自动隐藏action-sheet-->
+    <action-sheet-cancel>取消</action-sheet-cancel>
+</action-sheet>
