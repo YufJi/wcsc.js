@@ -8,20 +8,8 @@ import * as testUtil from "../test/util";
 import { WCSC, IWCSCCompileConfig, IOutMap } from "../src/index";
 import { Sandbox, ICssMap, IXcInvalidMap } from "../test/sandbox";
 
-
 function runSuit(testSuit: ITestSuit) {
-  let wcscjsCompileTime: number = 0;
-  let wcscjsOutputCode: string = "";
-  let wcscjsCodeMap: testUtil.ICodeMap = {};
-  let wcscjsCssMap: ICssMap = {};
-  let wcscjsSandbox: Sandbox;
-  let wcscjsXcInvalidMap: IXcInvalidMap = {};
-  let wcscCompileTime: number = 0;
-  let wcscOutputCode: string = "";
-  let wcscCodeMap: testUtil.ICodeMap = {};
-  let wcscCssMap: ICssMap = {};
-  let wcscSandbox: Sandbox;
-  let wcscXcInvalidMap: IXcInvalidMap = {};
+
   const needCode2Map = testUtil.needCode2Map(testSuit.compilerConfig);
   describe(testSuit.name, () => {
     it(testSuit.name + `[compile ${testSuit.compilerConfig.FILES.length} files]`, () => {
