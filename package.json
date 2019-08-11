@@ -1,10 +1,10 @@
 {
-  "name": "@tencent/wcscjs",
-  "version": "1.0.10",
+  "name": "wcsc.js",
+  "version": "1.0.1",
   "versionInfo": [
-    "feat: support subpackage"
+    "feat: wcsc.js"
   ],
-  "description": "A compiler for qss files.",
+  "description": "A compiler for wxss files.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -14,18 +14,20 @@
     "test:fail": "npm run lint && npm run _mocha:fail",
     "compile": "tsc --declaration",
     "lint": "tslint --project tsconfig.json",
-    "tnpm:publish": "npm run compile && tnpm publish",
+    "publish:npm": "npm run compile && npm publish",
     "benchmark": "npm run lint && mocha -t 999999 -r ts-node/register benchmark/index.ts"
   },
   "repository": {
     "type": "git",
-    "url": "http://git.code.oa.com/QQMiniApp/wcscjs.git"
+    "url": "https://github.com/caijw/wcsc.js.git"
   },
   "keywords": [
     "compiler",
-    "qss"
+    "wxss",
+    "wcsc",
+    "wcsc.js"
   ],
-  "author": "kingweicai",
+  "author": "caijw",
   "license": "ISC",
   "devDependencies": {
     "@babel/parser": "^7.5.5",
