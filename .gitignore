@@ -3,5 +3,5 @@ node_modules/
 /dist/
 .DS_Store
 .nyc_output/
-test/**/out/
+test/**/out
 package-lock.json
