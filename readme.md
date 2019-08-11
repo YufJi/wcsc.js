@@ -2,6 +2,8 @@
 
 wcsc.js是wxss文件编译器的nodejs实现
 
+wxml和wxs文件编译器的nodejs实现，可以查看[wcc.js](https://github.com/caijw/wcc.js)
+
 目标：
 
 - typescript编写该工具
