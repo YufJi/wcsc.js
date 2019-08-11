@@ -1,0 +1,31 @@
+setCssToHead(
+  [
+    ".",
+    [1],
+    "register-container { padding: 20px; display: flex; ;wxcs_originclass: .register-container;;wxcs_fileinfo: ./pages/register/register.wxss 1 1; }\nwx-form { width: 100%; ;wxcs_originclass: form;;wxcs_fileinfo: ./pages/register/register.wxss 6 1; }\n.",
+    [1],
+    "section { display: flex; ;wxcs_originclass: .section;;wxcs_fileinfo: ./pages/register/register.wxss 10 1; }\n.",
+    [1],
+    "picker { padding: 0 0 0 10px; ;wxcs_originclass: .picker;;wxcs_fileinfo: ./pages/register/register.wxss 14 1; }\n.",
+    [1],
+    "country { display: flex; font-size: 12px; border: 1px solid #ddd; width: 70px; height: 30px; line-height: 30px; ;wxcs_originclass: .country;;wxcs_fileinfo: ./pages/register/register.wxss 18 1; }\n.",
+    [1],
+    "triangle { width: 8px; height: 6px; ;wxcs_originclass: .triangle;;wxcs_fileinfo: ./pages/register/register.wxss 27 1; }\n.",
+    [1],
+    "phone { flex: 1; margin-left: -1px; ;wxcs_originclass: .phone;;wxcs_fileinfo: ./pages/register/register.wxss 32 1; }\n.",
+    [1],
+    "verification { flex: 1; margin: 20px 0; ;wxcs_originclass: .verification;;wxcs_fileinfo: ./pages/register/register.wxss 37 1; }\n.",
+    [1],
+    "input { border: 1px solid #ddd; font-size: 12px; padding: 0 10px; line-height: 30px; height: 30px; ;wxcs_originclass: .input;;wxcs_fileinfo: ./pages/register/register.wxss 42 1; }\n.",
+    [1],
+    "input-placeholder { color: #aaa!important; ;wxcs_originclass: .input-placeholder;;wxcs_fileinfo: ./pages/register/register.wxss 50 1; }\n.",
+    [1],
+    "verification-btn { border: 1px solid #bbb!important; color: #777!important; border-radius: 0px; height: 32px; margin: 20px 0 20px 20px; ;wxcs_originclass: .verification-btn;;wxcs_fileinfo: ./pages/register/register.wxss 54 1; }\n.",
+    [1],
+    "btn-hover { background-color: #eee!important; ;wxcs_originclass: .btn-hover;;wxcs_fileinfo: ./pages/register/register.wxss 62 1; }\n.",
+    [1],
+    "next-btn { margin: 20px 0; border: 1px solid #bbb!important; color: #777!important; width: 100%; border-radius: 0px; ;wxcs_originclass: .next-btn;;wxcs_fileinfo: ./pages/register/register.wxss 66 1; }\n"
+  ],
+  undefined,
+  { path: "./pages/register/register.wxss" }
+);

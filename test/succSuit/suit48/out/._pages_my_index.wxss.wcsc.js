@@ -1,0 +1,33 @@
+setCssToHead(
+  [
+    ".",
+    [1],
+    "container { display: flex; flex-direction: column; align-items: stretch; padding-top: ",
+    [0, 10],
+    "; ;wxcs_style_padding-top : 10rpx; ;wxcs_originclass: .container;;wxcs_fileinfo: ./pages/my/index.wxss 1 1; }\n.",
+    [1],
+    "block { display: flex; flex-direction: row; width: 100%; height: ",
+    [0, 110],
+    "; ;wxcs_style_height : 110rpx; margin-bottom: ",
+    [0, 10],
+    "; ;wxcs_style_margin-bottom : 10rpx; ;wxcs_originclass: .block;;wxcs_fileinfo: ./pages/my/index.wxss 8 1; }\n.",
+    [1],
+    "left { width: 15%; height: 100%; margin:0 ",
+    [0, 10],
+    "; ;wxcs_style_margin : 0 10rpx; ;wxcs_originclass: .left;;wxcs_fileinfo: ./pages/my/index.wxss 16 1; }\n.",
+    [1],
+    "default { width: 15%; height: 100%; margin:0 ",
+    [0, 10],
+    "; ;wxcs_style_margin : 0 10rpx; display: flex; flex-direction: row; align-items: center; justify-content: center; background-color: black; ;wxcs_originclass: .default;;wxcs_fileinfo: ./pages/my/index.wxss 22 1; }\n.",
+    [1],
+    "default wx-image { width: 70%; height: 70%; ;wxcs_originclass: .default image;;wxcs_fileinfo: ./pages/my/index.wxss 33 1; }\n.",
+    [1],
+    "right { flex: 1; height: 100%; border-bottom: 1px solid #eee; ;wxcs_originclass: .right;;wxcs_fileinfo: ./pages/my/index.wxss 38 1; }\n.",
+    [1],
+    "fav-name { font-size: 16px; ;wxcs_originclass: .fav-name;;wxcs_fileinfo: ./pages/my/index.wxss 44 1; }\n.",
+    [1],
+    "fav-count { font-size: 12px; color: #999; ;wxcs_originclass: .fav-count;;wxcs_fileinfo: ./pages/my/index.wxss 48 1; }\n"
+  ],
+  undefined,
+  { path: "./pages/my/index.wxss" }
+);

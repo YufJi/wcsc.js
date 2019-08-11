@@ -1,0 +1,33 @@
+setCssToHead(
+  [
+    ".",
+    [1],
+    "panel { position: relative; margin-top: ",
+    [0, 20],
+    "; ;wxcs_style_margin-top : 20rpx; background: #fff; overflow: hidden ;wxcs_originclass: .panel;;wxcs_fileinfo: ./dist/packages/@minui/wxc-panel/dist/index.wxss 1 1; }\n.",
+    [1],
+    "panel::after { content: ''; position: absolute; top: 0; left: 0; width: 200%; height: 200%; transform: scale(.5); transform-origin: 0 0; pointer-events: none; box-sizing: border-box; border: 0 solid #e5e5e5; border-top-width: ",
+    [0, 1],
+    "; ;wxcs_style_border-top-width : 1rpx; border-bottom-width: ",
+    [0, 1],
+    " ;wxcs_style_border-bottom-width : 1rpx; ;wxcs_originclass: .panel::after;;wxcs_fileinfo: ./dist/packages/@minui/wxc-panel/dist/index.wxss 7 3; }\n.",
+    [1],
+    "panel {;wxcs_originclass: .panel;;wxcs_fileinfo: ./dist/packages/@minui/wxc-panel/dist/index.wxss 22 3;}\n.",
+    [1],
+    "panel__title { font-size: ",
+    [0, 28],
+    "; ;wxcs_style_font-size : 28rpx; line-height: 1; color: #999; padding: ",
+    [0, 40],
+    " ",
+    [0, 30],
+    " 0 ",
+    [0, 30],
+    " ;wxcs_style_padding : 40rpx 30rpx 0 30rpx; ;wxcs_originclass: .panel__title;;wxcs_fileinfo: ./dist/packages/@minui/wxc-panel/dist/index.wxss 23 3; }\n.",
+    [1],
+    "panel__margin { margin-top: 0 ;wxcs_originclass: .panel__margin;;wxcs_fileinfo: ./dist/packages/@minui/wxc-panel/dist/index.wxss 29 3; }\n.",
+    [1],
+    "panel__border::after { border: 0 none ;wxcs_originclass: .panel__border::after;;wxcs_fileinfo: ./dist/packages/@minui/wxc-panel/dist/index.wxss 32 3; }\n"
+  ],
+  undefined,
+  { path: "./dist/packages/@minui/wxc-panel/dist/index.wxss" }
+);
