@@ -1,0 +1,57 @@
+{
+  "name": "@tencent/wcscjs",
+  "version": "1.0.10",
+  "versionInfo": [
+    "feat: support subpackage"
+  ],
+  "description": "A compiler for qss files.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "_mocha": "mocha -t 999999 -r ts-node/register test/test.ts",
+    "_mocha:fail": "mocha -t 999999 -r ts-node/register test/failTest.ts",
+    "test": "npm run lint && npm run _mocha",
+    "test:fail": "npm run lint && npm run _mocha:fail",
+    "compile": "tsc --declaration",
+    "lint": "tslint --project tsconfig.json",
+    "tnpm:publish": "npm run compile && tnpm publish",
+    "benchmark": "npm run lint && mocha -t 999999 -r ts-node/register benchmark/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.code.oa.com/QQMiniApp/wcscjs.git"
+  },
+  "keywords": [
+    "compiler",
+    "qss"
+  ],
+  "author": "kingweicai",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/parser": "^7.5.5",
+    "@types/clean-css": "^4.2.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.6",
+    "@types/prettier": "^1.18.0",
+    "clean-css": "^4.2.1",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "1.18.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "postcss-selector-parser": "^6.0.2",
+    "chalk": "^2.4.2",
+    "source-map": "^0.6.1",
+    "supports-color": "^6.1.0"
+  },
+  "files": [
+    "package.json",
+    "dist/",
+    "readme.md",
+    "lib/postcss/",
+    "lib/postcss-value-parser/"
+  ]
+}
